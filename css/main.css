@@ -1,165 +1,82 @@
-/*****************************************************************************/
 /*
-/* Common
+
+888b      88                                88                                 
+8888b     88                          ,d    88                                 
+88 `8b    88                          88    88                                 
+88  `8b   88  ,adPPYba,  8b,dPPYba, MM88MMM 88,dPPYba,   ,adPPYba, 8b,dPPYba, 8b,dPPYba,  
+88   `8b  88 a8"     "8a 88P'   "Y8   88    88P'    "8a a8P_____88 88P'   "Y8 88P'   `"8a  
+88    `8b 88 8b       d8 88           88    88       88 8PP""""""" 88         88       88  
+88     `8888 "8a,   ,a8" 88           88,   88       88 "8b,   ,aa 88         88       88   
+88      `888  `"YbbdP"'  88           "Y888 88       88  `"Ybbd8"' 88         88       88   
+                                    
+
+                                                ,d                          
+                                                88                          
+ ,adPPYb,d8 88       88 ,adPPYYba, 8b,dPPYba, MM88MMM ,adPPYba, 8b,dPPYba,  
+a8"    `Y88 88       88 ""     `Y8 88P'   "Y8   88   a8P_____88 88P'   "Y8  
+8b       88 88       88 ,adPPPPP88 88           88   8PP""""""" 88          
+"8a    ,d88 "8a,   ,a88 88,    ,88 88           88,  "8b,   ,aa 88          
+ `"YbbdP'88  `"YbbdP'Y8 `"8bbdP"Y8 88           "Y888 `"Ybbd8"' 88          
+         88                                                                 
+         88                                                                                88
+  ,d                                                                                       88
+  88                                                                                       88
+MM88MMM 8b       d8 8b,dPPYba,   ,adPPYba,   ,adPPYb,d8 8b,dPPYba, ,adPPYYba, 8b,dPPYba,  88,dPPYba,  8b       d8
+  88    `8b     d8' 88P'    "8a a8"     "8a a8"    `Y88 88P'   "Y8 ""     `Y8 88P'    "8a 88P'    "8a `8b     d8'
+  88     `8b   d8'  88       d8 8b       d8 8b       88 88         ,adPPPPP88 88       d8 88       88  `8b   d8' 
+  88,     `8b,d8'   88b,   ,a8" "8a,   ,a8" "8a,   ,d88 88         88,    ,88 88b,   ,a8" 88       88   `8b,d8' 
+  "Y888     Y88'    88`YbbdP"'   `"YbbdP"'   `"YbbdP"Y8 88         `"8bbdP"Y8 88`YbbdP"'  88       88     Y88' 
+            d8'     88                       aa,    ,88                       88                          d8' 
+           d8'      88                        "Y8bbdP"                        88                         d8' 
+
+crystal ship
+*/
+
+
 /*
-/*****************************************************************************/
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body { height: 100%; }
+ * Typography
+ */ 
 
 body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  color: #132B24;
+  padding: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-table {
-  font-size: inherit;
-  font: 100%;
-}
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-
-ul.posts li {
-  line-height: 1.75em;
-}
-
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
-
-.site .header a {
-  font-weight: bold;
+a {
+  color: #AA1E00;
   text-decoration: none;
+  transition: all 0.2s ease-out;
 }
 
-.site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
+a:hover {
+  color: #C86700;
 }
 
-.site .header h1.title a {
-  color: #a00;
-}
 
-.site .header h1.title a:hover {
-  color: #000;
-}
-
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
-}
-
-.site .meta {
-  color: #aaa;
-}
-
-.site .footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
-}
-
-/*****************************************************************************/
 /*
-/* Posts
-/*
-/*****************************************************************************/
+ * Layout
+ */
 
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+h1 {
+  max-width: 30%;
+  margin: 0 auto;
 }
 
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+@media (max-width: 600px) { h1 { max-width: 50% } }
+@media (max-width: 400px) { h1 { max-width: 80% } }
+
+h1 span {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
 }
 
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
+h1 img {
+  width: 100%;
 }
