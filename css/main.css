@@ -29,7 +29,6 @@ MM88MMM 8b       d8 8b,dPPYba,   ,adPPYba,   ,adPPYb,d8 8b,dPPYba, ,adPPYYba, 8b
             d8'     88                       aa,    ,88                       88                          d8' 
            d8'      88                        "Y8bbdP"                        88                         d8' 
 
-crystal ship
 */
 
 
@@ -41,6 +40,7 @@ body {
   font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
   color: #132B24;
   padding: 10px;
+  font-size: 16px;
 }
 
 a {
