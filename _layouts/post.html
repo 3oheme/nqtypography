@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
-<section>
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+<h1>{{ page.title }}</h1>
+<section class="post-teaser">
+
+  	<div class="post-teaser__image">
+ 		<img src="/images/{{ page.image }}" alt="{{ page.title}} typography awesomeness">
+ 	</div>	
+  	<div class="post-teaser__description">
+  		<p>{{ content }}</p>
+  		<p>{{ page.date | date_to_string }}</p>
+  		<p><a href="/images/{{ page.fullres }}" title="Download the full resolution image to your computer">Download high resolution</a> — <a href="{{ page.mapurl }}" title="Open this place in google maps">Google map address</a></p>
+    </div>	
 </section>

@@ -1,0 +1,102 @@
+/*
+ * Mixins
+ */
+
+@mixin mq-mobile  { @media (max-width: 450px) { @content; } }
+@mixin mq-tablet  { @media (min-width: 451px) and (max-width: 650px) { @content; } }
+@mixin mq-desktop { @media (min-width: 651px) { @content; } } 
+
+/*
+ * Typography
+ */ 
+
+body {
+  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  color: #132B24;
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+a {
+  color: #AA1E00;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+a:hover {
+  color: #C86700;
+}
+
+
+/*
+ * Layout
+ */
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  max-width: 30%;
+  margin: 30px auto 40px auto;
+  @include mq-mobile { max-width: 80%; margin: 10px auto 20px auto }
+  @include mq-tablet { max-width: 50%; margin: 10px auto 20px auto }
+}
+
+h1 span {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+}
+
+img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+/*
+ * Post teaser
+ */
+
+.post-teaser {
+  overflow: hidden;
+  margin-bottom: 40px;
+  @include mq-tablet { margin-bottom: 20px; }
+  @include mq-mobile { margin-bottom: 20px; }  
+  .post-teaser__image {
+    float: left;
+    width: 50%;
+    @include mq-tablet { width: 55% }
+    @include mq-mobile { width: 100% }
+  }
+  .post-teaser__description {
+    float: right;
+    width: calc(50% - 20px);
+    @include mq-tablet { width: calc(45% - 20px) }
+    @include mq-mobile { width: 100% }
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      font-size: 32px;
+      @include mq-tablet { font-size: 28px }
+      @include mq-mobile { font-size: 24px }
+    }
+  }
+}
+
+
+/*
+ * Footer
+ */
+
+footer {
+  text-align: center;
+  border-top: 1px solid #AA1E00;
+  margin: 20px auto 0;
+  width: 70%;
+  @include mq-tablet { width: 80% }
+  @include mq-mobile { width: 100%; text-align: left }  
+}

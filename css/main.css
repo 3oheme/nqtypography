@@ -1,82 +1,129 @@
 /*
-
-888b      88                                88                                 
-8888b     88                          ,d    88                                 
-88 `8b    88                          88    88                                 
-88  `8b   88  ,adPPYba,  8b,dPPYba, MM88MMM 88,dPPYba,   ,adPPYba, 8b,dPPYba, 8b,dPPYba,  
-88   `8b  88 a8"     "8a 88P'   "Y8   88    88P'    "8a a8P_____88 88P'   "Y8 88P'   `"8a  
-88    `8b 88 8b       d8 88           88    88       88 8PP""""""" 88         88       88  
-88     `8888 "8a,   ,a8" 88           88,   88       88 "8b,   ,aa 88         88       88   
-88      `888  `"YbbdP"'  88           "Y888 88       88  `"Ybbd8"' 88         88       88   
-                                    
-
-                                                ,d                          
-                                                88                          
- ,adPPYb,d8 88       88 ,adPPYYba, 8b,dPPYba, MM88MMM ,adPPYba, 8b,dPPYba,  
-a8"    `Y88 88       88 ""     `Y8 88P'   "Y8   88   a8P_____88 88P'   "Y8  
-8b       88 88       88 ,adPPPPP88 88           88   8PP""""""" 88          
-"8a    ,d88 "8a,   ,a88 88,    ,88 88           88,  "8b,   ,aa 88          
- `"YbbdP'88  `"YbbdP'Y8 `"8bbdP"Y8 88           "Y888 `"Ybbd8"' 88          
-         88                                                                 
-         88                                                                                88
-  ,d                                                                                       88
-  88                                                                                       88
-MM88MMM 8b       d8 8b,dPPYba,   ,adPPYba,   ,adPPYb,d8 8b,dPPYba, ,adPPYYba, 8b,dPPYba,  88,dPPYba,  8b       d8
-  88    `8b     d8' 88P'    "8a a8"     "8a a8"    `Y88 88P'   "Y8 ""     `Y8 88P'    "8a 88P'    "8a `8b     d8'
-  88     `8b   d8'  88       d8 8b       d8 8b       88 88         ,adPPPPP88 88       d8 88       88  `8b   d8' 
-  88,     `8b,d8'   88b,   ,a8" "8a,   ,a8" "8a,   ,d88 88         88,    ,88 88b,   ,a8" 88       88   `8b,d8' 
-  "Y888     Y88'    88`YbbdP"'   `"YbbdP"'   `"YbbdP"Y8 88         `"8bbdP"Y8 88`YbbdP"'  88       88     Y88' 
-            d8'     88                       aa,    ,88                       88                          d8' 
-           d8'      88                        "Y8bbdP"                        88                         d8' 
-
-*/
-
+ * Mixins
+ */
 /*
  * Typography
- */ 
-
+ */
+/* line 13, main.scss */
 body {
   font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
   color: #132B24;
   padding: 10px;
-  font-size: 16px;
-}
+  margin: 0;
+  font-size: 16px; }
 
+/* line 21, main.scss */
 a {
   color: #AA1E00;
   text-decoration: none;
-  transition: all 0.2s ease-out;
-}
+  transition: all 0.2s ease-out; }
 
+/* line 27, main.scss */
 a:hover {
-  color: #C86700;
-}
-
+  color: #C86700; }
 
 /*
  * Layout
  */
-
+/* line 36, main.scss */
 .wrapper {
   max-width: 900px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
+/* line 41, main.scss */
 h1 {
   max-width: 30%;
-  margin: 0 auto;
-}
+  margin: 30px auto 40px auto; }
+  @media (max-width: 450px) {
+    /* line 41, main.scss */
+    h1 {
+      max-width: 80%;
+      margin: 10px auto 20px auto; } }
+  @media (min-width: 451px) and (max-width: 650px) {
+    /* line 41, main.scss */
+    h1 {
+      max-width: 50%;
+      margin: 10px auto 20px auto; } }
 
-@media (max-width: 600px) { h1 { max-width: 50% } }
-@media (max-width: 400px) { h1 { max-width: 80% } }
-
+/* line 48, main.scss */
 h1 span {
   position: absolute;
   display: block;
-  text-indent: -9999px;
-}
+  text-indent: -9999px; }
 
+/* line 54, main.scss */
 img {
   min-width: 100%;
-  max-width: 100%;
-}
+  max-width: 100%; }
+
+/*
+ * Post teaser
+ */
+/* line 64, main.scss */
+.post-teaser {
+  overflow: hidden;
+  margin-bottom: 40px; }
+  @media (min-width: 451px) and (max-width: 650px) {
+    /* line 64, main.scss */
+    .post-teaser {
+      margin-bottom: 20px; } }
+  @media (max-width: 450px) {
+    /* line 64, main.scss */
+    .post-teaser {
+      margin-bottom: 20px; } }
+  /* line 69, main.scss */
+  .post-teaser .post-teaser__image {
+    float: left;
+    width: 50%; }
+    @media (min-width: 451px) and (max-width: 650px) {
+      /* line 69, main.scss */
+      .post-teaser .post-teaser__image {
+        width: 55%; } }
+    @media (max-width: 450px) {
+      /* line 69, main.scss */
+      .post-teaser .post-teaser__image {
+        width: 100%; } }
+  /* line 75, main.scss */
+  .post-teaser .post-teaser__description {
+    float: right;
+    width: calc(50% - 20px); }
+    @media (min-width: 451px) and (max-width: 650px) {
+      /* line 75, main.scss */
+      .post-teaser .post-teaser__description {
+        width: calc(45% - 20px); } }
+    @media (max-width: 450px) {
+      /* line 75, main.scss */
+      .post-teaser .post-teaser__description {
+        width: 100%; } }
+    /* line 80, main.scss */
+    .post-teaser .post-teaser__description h2 {
+      margin-top: 0;
+      font-weight: normal;
+      font-size: 32px; }
+      @media (min-width: 451px) and (max-width: 650px) {
+        /* line 80, main.scss */
+        .post-teaser .post-teaser__description h2 {
+          font-size: 28px; } }
+      @media (max-width: 450px) {
+        /* line 80, main.scss */
+        .post-teaser .post-teaser__description h2 {
+          font-size: 24px; } }
+
+/*
+ * Footer
+ */
+/* line 95, main.scss */
+footer {
+  text-align: center;
+  border-top: 1px solid #AA1E00;
+  margin: 20px auto 0;
+  width: 70%; }
+  @media (min-width: 451px) and (max-width: 650px) {
+    /* line 95, main.scss */
+    footer {
+      width: 80%; } }
+  @media (max-width: 450px) {
+    /* line 95, main.scss */
+    footer {
+      width: 100%;
+      text-align: left; } }
