@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Footwear"
+date:   2014-01-06 18:59:58
+categories: article
+image: "footwear"
+---
+
+Footwear
