@@ -1,3 +1,5 @@
+/* Crystal ship medium */
+
 /*
  * Mixins
  */
@@ -5,6 +7,17 @@
 @mixin mq-mobile  { @media (max-width: 450px) { @content; } }
 @mixin mq-tablet  { @media (min-width: 451px) and (max-width: 650px) { @content; } }
 @mixin mq-desktop { @media (min-width: 651px) { @content; } } 
+
+.visual-hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
 /*
  * Typography

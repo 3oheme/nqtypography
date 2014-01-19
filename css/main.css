@@ -1,10 +1,22 @@
+/* Crystal ship medium */
 /*
  * Mixins
  */
+/* line 11, main.scss */
+.visual-hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 /*
  * Typography
  */
-/* line 13, main.scss */
+/* line 26, main.scss */
 body {
   font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
   color: #132B24;
@@ -12,46 +24,46 @@ body {
   margin: 0;
   font-size: 16px; }
 
-/* line 21, main.scss */
+/* line 34, main.scss */
 a {
   color: #AA1E00;
   text-decoration: none;
   transition: all 0.2s ease-out; }
 
-/* line 27, main.scss */
+/* line 40, main.scss */
 a:hover {
   color: #C86700; }
 
 /*
  * Layout
  */
-/* line 36, main.scss */
+/* line 49, main.scss */
 .wrapper {
   max-width: 900px;
   margin: 0 auto; }
 
-/* line 41, main.scss */
+/* line 54, main.scss */
 h1 {
   max-width: 30%;
   margin: 30px auto 40px auto; }
   @media (max-width: 450px) {
-    /* line 41, main.scss */
+    /* line 54, main.scss */
     h1 {
       max-width: 80%;
       margin: 10px auto 20px auto; } }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 41, main.scss */
+    /* line 54, main.scss */
     h1 {
       max-width: 50%;
       margin: 10px auto 20px auto; } }
 
-/* line 48, main.scss */
+/* line 61, main.scss */
 h1 span {
   position: absolute;
   display: block;
   text-indent: -9999px; }
 
-/* line 54, main.scss */
+/* line 67, main.scss */
 img {
   min-width: 100%;
   max-width: 100%; }
@@ -59,71 +71,71 @@ img {
 /*
  * Post teaser
  */
-/* line 64, main.scss */
+/* line 77, main.scss */
 .post-teaser {
   overflow: hidden;
   margin-bottom: 40px; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 64, main.scss */
+    /* line 77, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
   @media (max-width: 450px) {
-    /* line 64, main.scss */
+    /* line 77, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
-  /* line 69, main.scss */
+  /* line 82, main.scss */
   .post-teaser .post-teaser__image {
     float: left;
     width: 50%; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 69, main.scss */
+      /* line 82, main.scss */
       .post-teaser .post-teaser__image {
         width: 55%; } }
     @media (max-width: 450px) {
-      /* line 69, main.scss */
+      /* line 82, main.scss */
       .post-teaser .post-teaser__image {
         width: 100%; } }
-  /* line 75, main.scss */
+  /* line 88, main.scss */
   .post-teaser .post-teaser__description {
     float: right;
     width: calc(50% - 20px); }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 75, main.scss */
+      /* line 88, main.scss */
       .post-teaser .post-teaser__description {
         width: calc(45% - 20px); } }
     @media (max-width: 450px) {
-      /* line 75, main.scss */
+      /* line 88, main.scss */
       .post-teaser .post-teaser__description {
         width: 100%; } }
-    /* line 80, main.scss */
+    /* line 93, main.scss */
     .post-teaser .post-teaser__description h2 {
       margin-top: 0;
       font-weight: normal;
       font-size: 32px; }
       @media (min-width: 451px) and (max-width: 650px) {
-        /* line 80, main.scss */
+        /* line 93, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 28px; } }
       @media (max-width: 450px) {
-        /* line 80, main.scss */
+        /* line 93, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 24px; } }
 
 /*
  * Footer
  */
-/* line 95, main.scss */
+/* line 108, main.scss */
 footer {
   text-align: center;
   border-top: 1px solid #AA1E00;
   margin: 20px auto 0;
   width: 70%; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 95, main.scss */
+    /* line 108, main.scss */
     footer {
       width: 80%; } }
   @media (max-width: 450px) {
-    /* line 95, main.scss */
+    /* line 108, main.scss */
     footer {
       width: 100%;
       text-align: left; } }
