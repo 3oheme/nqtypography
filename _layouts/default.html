@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=1" name="viewport" />
+    <meta name="description" content="An inspiring collection of different typography and calligraphy resources and elements found around Northern Quarter, Manchester" />
+    <meta name="keywords" content="Typography, calligraphy, fonts, inspiration, design, graphic design" />
+    <meta name="author" content="Ignacio Palomo Duarte" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Mrs+Sheppards' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/jquery.justifiedgallery.min.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+    <!--
+
+/*
+
+888b      88                                88                                 
+8888b     88                          ,d    88                                 
+88 `8b    88                          88    88                                 
+88  `8b   88  ,adPPYba,  8b,dPPYba, MM88MMM 88,dPPYba,   ,adPPYba, 8b,dPPYba, 8b,dPPYba,  
+88   `8b  88 a8"     "8a 88P'   "Y8   88    88P'    "8a a8P_____88 88P'   "Y8 88P'   `"8a  
+88    `8b 88 8b       d8 88           88    88       88 8PP""""""" 88         88       88  
+88     `8888 "8a,   ,a8" 88           88,   88       88 "8b,   ,aa 88         88       88   
+88      `888  `"YbbdP"'  88           "Y888 88       88  `"Ybbd8"' 88         88       88   
+                                    
+
+                                                ,d                          
+                                                88                          
+ ,adPPYb,d8 88       88 ,adPPYYba, 8b,dPPYba, MM88MMM ,adPPYba, 8b,dPPYba,  
+a8"    `Y88 88       88 ""     `Y8 88P'   "Y8   88   a8P_____88 88P'   "Y8  
+8b       88 88       88 ,adPPPPP88 88           88   8PP""""""" 88          
+"8a    ,d88 "8a,   ,a88 88,    ,88 88           88,  "8b,   ,aa 88          
+ `"YbbdP'88  `"YbbdP'Y8 `"8bbdP"Y8 88           "Y888 `"Ybbd8"' 88          
+         88                                                                 
+         88                                                                                88
+  ,d                                                                                       88
+  88                                                                                       88
+MM88MMM 8b       d8 8b,dPPYba,   ,adPPYba,   ,adPPYb,d8 8b,dPPYba, ,adPPYYba, 8b,dPPYba,  88,dPPYba,  8b       d8
+  88    `8b     d8' 88P'    "8a a8"     "8a a8"    `Y88 88P'   "Y8 ""     `Y8 88P'    "8a 88P'    "8a `8b     d8'
+  88     `8b   d8'  88       d8 8b       d8 8b       88 88         ,adPPPPP88 88       d8 88       88  `8b   d8' 
+  88,     `8b,d8'   88b,   ,a8" "8a,   ,a8" "8a,   ,d88 88         88,    ,88 88b,   ,a8" 88       88   `8b,d8' 
+  "Y888     Y88'    88`YbbdP"'   `"YbbdP"'   `"YbbdP"Y8 88         `"8bbdP"Y8 88`YbbdP"'  88       88     Y88' 
+            d8'     88                       aa,    ,88                       88                          d8' 
+           d8'      88                        "Y8bbdP"                        88                         d8' 
+
+*/
+
+-->
+
+    <div class="wrapper">
+      <header>
+        <h1><a href="/"><span>Northern Quarter Typography</span> <img src="/images/northern-quarter-typography-logo.png" alt="Northern Quarter Typography logo"></a></h1>
+      </header>
+
+      <article>
+        {{ content }}
+      </article>
+
+      <footer>
+        <p>This is a personal project of <a href="http://3oheme.com" title="3oheme personal portfolio home page">Ignacio Palomo Duarte</a>.</p>
+        <p>All pictures have been taken by the author in Northern Quarter neighbourhood around Manchester (United Kingdom), and the work is licensed under a <a title="Creative Commons license explanation" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+      </footer>
+    </div>  
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.justifiedgallery.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-11435750-10', 'nqtypography.com');
+      ga('send', 'pageview');
+    </script>
+
+    <script>
+      if ($(window).width() > 300) {
+        $(".full-gallery").justifiedGallery({
+          'margins': 10,
+          'sizeRangeSuffixes':
+            {
+              'lt100':'',
+              'lt240':'', 
+              'lt320':'', 
+              'lt500':'', 
+              'lt640':'', 
+              'lt1024':''
+            }
+        });
+      }
+    </script>
+  </body>
+</html>

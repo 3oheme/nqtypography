@@ -1,0 +1,13 @@
+---
+layout: default
+title: Northern Quarter typography inspiration for design lovers
+---
+
+<section class="full-gallery">
+{% for post in site.posts %}
+	<a href="{{ post.url }}" title="Read more about {{ post.title }}">
+		<span class="visual-hide">{{ post.title }}</span>
+		<img src="/images/{{ post.image }}_medium.jpg" alt="{{ post.title}}">
+	</a>
+{% endfor %}
+</section>

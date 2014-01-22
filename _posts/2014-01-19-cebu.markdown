@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Cebu"
+date:   2014-01-06 18:59:58
+categories: article
+image: "cebu_cafe_and_filipino_fast_food"
+---
+
+Cebu cafe and filipino fast food take-away
