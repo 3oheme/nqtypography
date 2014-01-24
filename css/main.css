@@ -18,52 +18,67 @@
  */
 /* line 26, main.scss */
 body {
-  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Alegreya Sans', 'Arial', 'Helvetica', sans-serif;
   color: #132B24;
-  padding: 10px;
+  padding: 0 10px 10px;
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300;
+  background: #edecea url("../images/bgpaper.png"); }
 
-/* line 34, main.scss */
+/* line 36, main.scss */
 a {
   color: #AA1E00;
   text-decoration: none;
   transition: all 0.2s ease-out; }
 
-/* line 40, main.scss */
+/* line 42, main.scss */
 a:hover {
   color: #C86700; }
 
 /*
  * Layout
  */
-/* line 49, main.scss */
-.wrapper {
+/* line 51, main.scss */
+header, footer {
   max-width: 900px;
   margin: 0 auto; }
 
-/* line 54, main.scss */
+/* line 56, main.scss */
+article {
+  clear: both; }
+
+/* line 60, main.scss */
 h1 {
-  max-width: 30%;
-  margin: 30px auto 40px auto; }
-  @media (max-width: 450px) {
-    /* line 54, main.scss */
-    h1 {
-      max-width: 80%;
-      margin: 10px auto 20px auto; } }
-  @media (min-width: 451px) and (max-width: 650px) {
-    /* line 54, main.scss */
-    h1 {
-      max-width: 50%;
-      margin: 10px auto 20px auto; } }
+  float: left;
+  font-weight: 900;
+  background: white;
+  margin: 0 0 20px; }
+  /* line 66, main.scss */
+  h1 a {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    font-size: 18px;
+    box-shadow: 0 1px 2px #ddd;
+    border-radius: 0 0 2px 2px; }
+    @media (min-width: 451px) and (max-width: 650px) {
+      /* line 66, main.scss */
+      h1 a {
+        font-size: 20px;
+        padding: 30px; } }
+    @media (min-width: 651px) {
+      /* line 66, main.scss */
+      h1 a {
+        font-size: 30px;
+        padding: 40px; } }
+  /* line 76, main.scss */
+  h1 span {
+    position: absolute;
+    display: block;
+    text-indent: -9999px; }
 
-/* line 61, main.scss */
-h1 span {
-  position: absolute;
-  display: block;
-  text-indent: -9999px; }
-
-/* line 67, main.scss */
+/* line 84, main.scss */
 img {
   min-width: 100%;
   max-width: 100%; }
@@ -71,71 +86,71 @@ img {
 /*
  * Post teaser
  */
-/* line 77, main.scss */
+/* line 94, main.scss */
 .post-teaser {
   overflow: hidden;
   margin-bottom: 40px; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 77, main.scss */
+    /* line 94, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
   @media (max-width: 450px) {
-    /* line 77, main.scss */
+    /* line 94, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
-  /* line 82, main.scss */
+  /* line 99, main.scss */
   .post-teaser .post-teaser__image {
     float: left;
     width: 50%; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 82, main.scss */
+      /* line 99, main.scss */
       .post-teaser .post-teaser__image {
         width: 55%; } }
     @media (max-width: 450px) {
-      /* line 82, main.scss */
+      /* line 99, main.scss */
       .post-teaser .post-teaser__image {
         width: 100%; } }
-  /* line 88, main.scss */
+  /* line 105, main.scss */
   .post-teaser .post-teaser__description {
     float: right;
     width: calc(50% - 20px); }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 88, main.scss */
+      /* line 105, main.scss */
       .post-teaser .post-teaser__description {
         width: calc(45% - 20px); } }
     @media (max-width: 450px) {
-      /* line 88, main.scss */
+      /* line 105, main.scss */
       .post-teaser .post-teaser__description {
         width: 100%; } }
-    /* line 93, main.scss */
+    /* line 110, main.scss */
     .post-teaser .post-teaser__description h2 {
       margin-top: 0;
       font-weight: normal;
       font-size: 32px; }
       @media (min-width: 451px) and (max-width: 650px) {
-        /* line 93, main.scss */
+        /* line 110, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 28px; } }
       @media (max-width: 450px) {
-        /* line 93, main.scss */
+        /* line 110, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 24px; } }
 
 /*
  * Footer
  */
-/* line 108, main.scss */
+/* line 125, main.scss */
 footer {
   text-align: center;
   border-top: 1px solid #AA1E00;
   margin: 20px auto 0;
   width: 70%; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 108, main.scss */
+    /* line 125, main.scss */
     footer {
       width: 80%; } }
   @media (max-width: 450px) {
-    /* line 108, main.scss */
+    /* line 125, main.scss */
     footer {
       width: 100%;
       text-align: left; } }

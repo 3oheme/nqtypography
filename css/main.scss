@@ -24,11 +24,13 @@
  */ 
 
 body {
-  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Alegreya Sans', 'Arial', 'Helvetica', sans-serif;
   color: #132B24;
-  padding: 10px;
+  padding: 0 10px 10px;
   margin: 0;
   font-size: 16px;
+  font-weight: 300;
+  background: #edecea url('../images/bgpaper.png');
 }
 
 a {
@@ -46,23 +48,38 @@ a:hover {
  * Layout
  */
 
-.wrapper {
+header, footer {
   max-width: 900px;
   margin: 0 auto;
 }
 
-h1 {
-  max-width: 30%;
-  margin: 30px auto 40px auto;
-  @include mq-mobile { max-width: 80%; margin: 10px auto 20px auto }
-  @include mq-tablet { max-width: 50%; margin: 10px auto 20px auto }
+article {
+  clear: both;
 }
 
-h1 span {
-  position: absolute;
-  display: block;
-  text-indent: -9999px;
+h1 {
+  float: left;
+  font-weight: 900;
+  background: white;
+  margin: 0 0 20px;
+  
+  a {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    font-size: 18px;
+    @include mq-tablet { font-size: 20px; padding: 30px }
+    @include mq-desktop { font-size: 30px; padding: 40px }
+    box-shadow: 0 1px 2px #ddd;
+    border-radius: 0 0 2px 2px;
+  }
+  span {
+    position: absolute;
+    display: block;
+    text-indent: -9999px;
+  }
 }
+
 
 img {
   min-width: 100%;
