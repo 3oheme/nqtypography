@@ -20,10 +20,10 @@
 body {
   font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
   color: #132b24;
+  line-height: 1.6em;
   padding: 0 10px;
   margin: 0;
   font-size: 16px;
-  font-weight: 300;
   background: #edecea url("../images/bgpaper.png"); }
 
 /* line 40, main.scss */
@@ -45,35 +45,35 @@ h2 {
     h2 {
       font-size: 40px; } }
 
-/* line 54, main.scss */
+/* line 53, main.scss */
 a {
   color: #aa1e00;
   text-decoration: none;
   transition: all 0.2s ease-out; }
 
-/* line 60, main.scss */
+/* line 59, main.scss */
 a:hover {
   color: #c86700; }
 
-/* line 64, main.scss */
+/* line 63, main.scss */
 p {
   margin: 0 0 1em; }
 
 /*
  * Layout
  */
-/* line 73, main.scss */
+/* line 72, main.scss */
 header, footer, article {
   max-width: 800px;
   margin: 0 auto;
   clear: both; }
 
-/* line 79, main.scss */
+/* line 78, main.scss */
 article.fullwidth {
   clear: both;
   max-width: 100%; }
 
-/* line 86, main.scss */
+/* line 85, main.scss */
 header {
   background: white;
   box-shadow: 0 1px 2px #ddd;
@@ -81,12 +81,12 @@ header {
   overflow: hidden;
   margin-bottom: 20px; }
 
-/* line 94, main.scss */
+/* line 93, main.scss */
 h1 {
   float: left;
   font-weight: 900;
   margin: 0; }
-  /* line 98, main.scss */
+  /* line 97, main.scss */
   h1 a {
     color: #132b24;
     padding: 20px;
@@ -94,22 +94,22 @@ h1 {
     font-size: 18px;
     line-height: 1em; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 98, main.scss */
+      /* line 97, main.scss */
       h1 a {
         font-size: 15px;
         padding: 15px; } }
     @media (min-width: 651px) {
-      /* line 98, main.scss */
+      /* line 97, main.scss */
       h1 a {
         font-size: 20px;
         padding: 20px; } }
-  /* line 108, main.scss */
+  /* line 107, main.scss */
   h1 span {
     position: absolute;
     display: block;
     text-indent: -9999px; }
 
-/* line 115, main.scss */
+/* line 114, main.scss */
 nav a {
   opacity: 0.3;
   float: right;
@@ -119,20 +119,20 @@ nav a {
   color: #132b24;
   line-height: 1em; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 115, main.scss */
+    /* line 114, main.scss */
     nav a {
       font-size: 15px;
       padding: 15px; } }
   @media (min-width: 651px) {
-    /* line 115, main.scss */
+    /* line 114, main.scss */
     nav a {
       font-size: 20px;
       padding: 20px; } }
-  /* line 125, main.scss */
+  /* line 124, main.scss */
   nav a:hover {
     opacity: 1; }
 
-/* line 130, main.scss */
+/* line 129, main.scss */
 img {
   min-width: 100%;
   max-width: 100%; }
@@ -140,57 +140,61 @@ img {
 /*
  * Post teaser
  */
-/* line 139, main.scss */
+/* line 138, main.scss */
 .post-teaser {
   overflow: hidden;
   margin-bottom: 40px; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 139, main.scss */
+    /* line 138, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
   @media (max-width: 450px) {
-    /* line 139, main.scss */
+    /* line 138, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
-  /* line 144, main.scss */
+  /* line 143, main.scss */
   .post-teaser .post-teaser__image {
     float: left;
     width: 50%; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 144, main.scss */
+      /* line 143, main.scss */
       .post-teaser .post-teaser__image {
         width: 55%; } }
     @media (max-width: 450px) {
-      /* line 144, main.scss */
+      /* line 143, main.scss */
       .post-teaser .post-teaser__image {
         width: 100%; } }
-  /* line 150, main.scss */
+    /* line 148, main.scss */
+    .post-teaser .post-teaser__image img {
+      border-radius: 3px;
+      box-shadow: 0 1px 2px #ddd; }
+  /* line 153, main.scss */
   .post-teaser .post-teaser__description {
     float: right;
     width: calc(50% - 20px); }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 150, main.scss */
+      /* line 153, main.scss */
       .post-teaser .post-teaser__description {
         width: calc(45% - 20px); } }
     @media (max-width: 450px) {
-      /* line 150, main.scss */
+      /* line 153, main.scss */
       .post-teaser .post-teaser__description {
         width: 100%; } }
-    /* line 155, main.scss */
+    /* line 158, main.scss */
     .post-teaser .post-teaser__description h2 {
       margin-top: 0;
       font-weight: normal;
       font-size: 32px; }
       @media (min-width: 451px) and (max-width: 650px) {
-        /* line 155, main.scss */
+        /* line 158, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 28px; } }
       @media (max-width: 450px) {
-        /* line 155, main.scss */
+        /* line 158, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 24px; } }
 
-/* line 165, main.scss */
+/* line 168, main.scss */
 .btn {
   background: white;
   border-radius: 2px;
@@ -199,7 +203,7 @@ img {
   padding: 5px 10px;
   color: #132b24;
   transition: all 0.2s ease-out; }
-  /* line 173, main.scss */
+  /* line 176, main.scss */
   .btn:hover {
     box-shadow: 0 1px 0 #c86700;
     border: 1px solid #CCC; }
@@ -207,7 +211,7 @@ img {
 /*
  * Footer
  */
-/* line 184, main.scss */
+/* line 187, main.scss */
 footer {
   background: white;
   margin-top: 20px;

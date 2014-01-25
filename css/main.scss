@@ -30,10 +30,10 @@ $link-color-hover: #C86700;
 body {
   font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
   color: $dark-copy;
+  line-height: 1.6em;
   padding: 0 10px;
   margin: 0;
   font-size: 16px;
-  font-weight: 300;
   background: #edecea url('../images/bgpaper.png');
 }
 
@@ -49,7 +49,6 @@ h2 {
   @include mq-tablet { font-size: 35px }
   @include mq-desktop { font-size: 40px }
 }
-
 
 a {
   color: $link-color;
@@ -146,6 +145,10 @@ img {
     width: 50%;
     @include mq-tablet { width: 55% }
     @include mq-mobile { width: 100% }
+    img {
+      border-radius: 3px;
+      box-shadow: 0 1px 2px #ddd;
+    }
   }
   .post-teaser__description {
     float: right;
