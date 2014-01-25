@@ -2,7 +2,7 @@
 /*
  * Mixins
  */
-/* line 11, main.scss */
+/* line 15, main.scss */
 .visual-hide {
   border: 0;
   clip: rect(0 0 0 0);
@@ -16,69 +16,123 @@
 /*
  * Typography
  */
-/* line 26, main.scss */
+/* line 30, main.scss */
 body {
-  font-family: 'Alegreya Sans', 'Arial', 'Helvetica', sans-serif;
-  color: #132B24;
-  padding: 0 10px 10px;
+  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  color: #132b24;
+  padding: 0 10px;
   margin: 0;
   font-size: 16px;
   font-weight: 300;
   background: #edecea url("../images/bgpaper.png"); }
 
-/* line 36, main.scss */
+/* line 40, main.scss */
+h1, h2 {
+  letter-spacing: -0.02em; }
+
+/* line 44, main.scss */
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 20px 40px; }
+  @media (min-width: 451px) and (max-width: 650px) {
+    /* line 44, main.scss */
+    h2 {
+      font-size: 35px; } }
+  @media (min-width: 651px) {
+    /* line 44, main.scss */
+    h2 {
+      font-size: 40px; } }
+
+/* line 54, main.scss */
 a {
-  color: #AA1E00;
+  color: #aa1e00;
   text-decoration: none;
   transition: all 0.2s ease-out; }
 
-/* line 42, main.scss */
+/* line 60, main.scss */
 a:hover {
-  color: #C86700; }
+  color: #c86700; }
+
+/* line 64, main.scss */
+p {
+  margin: 0 0 1em; }
 
 /*
  * Layout
  */
-/* line 51, main.scss */
-header, footer {
-  max-width: 900px;
-  margin: 0 auto; }
-
-/* line 56, main.scss */
-article {
+/* line 73, main.scss */
+header, footer, article {
+  max-width: 800px;
+  margin: 0 auto;
   clear: both; }
 
-/* line 60, main.scss */
+/* line 79, main.scss */
+article.fullwidth {
+  clear: both;
+  max-width: 100%; }
+
+/* line 86, main.scss */
+header {
+  background: white;
+  box-shadow: 0 1px 2px #ddd;
+  border-radius: 0 0 2px 2px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+/* line 94, main.scss */
 h1 {
   float: left;
   font-weight: 900;
-  background: white;
-  margin: 0 0 20px; }
-  /* line 66, main.scss */
+  margin: 0; }
+  /* line 98, main.scss */
   h1 a {
-    color: black;
+    color: #132b24;
     padding: 20px;
     display: inline-block;
     font-size: 18px;
-    box-shadow: 0 1px 2px #ddd;
-    border-radius: 0 0 2px 2px; }
+    line-height: 1em; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 66, main.scss */
+      /* line 98, main.scss */
+      h1 a {
+        font-size: 15px;
+        padding: 15px; } }
+    @media (min-width: 651px) {
+      /* line 98, main.scss */
       h1 a {
         font-size: 20px;
-        padding: 30px; } }
-    @media (min-width: 651px) {
-      /* line 66, main.scss */
-      h1 a {
-        font-size: 30px;
-        padding: 40px; } }
-  /* line 76, main.scss */
+        padding: 20px; } }
+  /* line 108, main.scss */
   h1 span {
     position: absolute;
     display: block;
     text-indent: -9999px; }
 
-/* line 84, main.scss */
+/* line 115, main.scss */
+nav a {
+  opacity: 0.3;
+  float: right;
+  padding: 20px;
+  display: inline-block;
+  font-size: 18px;
+  color: #132b24;
+  line-height: 1em; }
+  @media (min-width: 451px) and (max-width: 650px) {
+    /* line 115, main.scss */
+    nav a {
+      font-size: 15px;
+      padding: 15px; } }
+  @media (min-width: 651px) {
+    /* line 115, main.scss */
+    nav a {
+      font-size: 20px;
+      padding: 20px; } }
+  /* line 125, main.scss */
+  nav a:hover {
+    opacity: 1; }
+
+/* line 130, main.scss */
 img {
   min-width: 100%;
   max-width: 100%; }
@@ -86,71 +140,78 @@ img {
 /*
  * Post teaser
  */
-/* line 94, main.scss */
+/* line 139, main.scss */
 .post-teaser {
   overflow: hidden;
   margin-bottom: 40px; }
   @media (min-width: 451px) and (max-width: 650px) {
-    /* line 94, main.scss */
+    /* line 139, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
   @media (max-width: 450px) {
-    /* line 94, main.scss */
+    /* line 139, main.scss */
     .post-teaser {
       margin-bottom: 20px; } }
-  /* line 99, main.scss */
+  /* line 144, main.scss */
   .post-teaser .post-teaser__image {
     float: left;
     width: 50%; }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 99, main.scss */
+      /* line 144, main.scss */
       .post-teaser .post-teaser__image {
         width: 55%; } }
     @media (max-width: 450px) {
-      /* line 99, main.scss */
+      /* line 144, main.scss */
       .post-teaser .post-teaser__image {
         width: 100%; } }
-  /* line 105, main.scss */
+  /* line 150, main.scss */
   .post-teaser .post-teaser__description {
     float: right;
     width: calc(50% - 20px); }
     @media (min-width: 451px) and (max-width: 650px) {
-      /* line 105, main.scss */
+      /* line 150, main.scss */
       .post-teaser .post-teaser__description {
         width: calc(45% - 20px); } }
     @media (max-width: 450px) {
-      /* line 105, main.scss */
+      /* line 150, main.scss */
       .post-teaser .post-teaser__description {
         width: 100%; } }
-    /* line 110, main.scss */
+    /* line 155, main.scss */
     .post-teaser .post-teaser__description h2 {
       margin-top: 0;
       font-weight: normal;
       font-size: 32px; }
       @media (min-width: 451px) and (max-width: 650px) {
-        /* line 110, main.scss */
+        /* line 155, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 28px; } }
       @media (max-width: 450px) {
-        /* line 110, main.scss */
+        /* line 155, main.scss */
         .post-teaser .post-teaser__description h2 {
           font-size: 24px; } }
+
+/* line 165, main.scss */
+.btn {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #DDD;
+  box-shadow: 0 1px 0 #F7DCD6;
+  padding: 5px 10px;
+  color: #132b24;
+  transition: all 0.2s ease-out; }
+  /* line 173, main.scss */
+  .btn:hover {
+    box-shadow: 0 1px 0 #c86700;
+    border: 1px solid #CCC; }
 
 /*
  * Footer
  */
-/* line 125, main.scss */
+/* line 184, main.scss */
 footer {
-  text-align: center;
-  border-top: 1px solid #AA1E00;
-  margin: 20px auto 0;
-  width: 70%; }
-  @media (min-width: 451px) and (max-width: 650px) {
-    /* line 125, main.scss */
-    footer {
-      width: 80%; } }
-  @media (max-width: 450px) {
-    /* line 125, main.scss */
-    footer {
-      width: 100%;
-      text-align: left; } }
+  background: white;
+  margin-top: 20px;
+  padding: 20px 20px 1px;
+  box-shadow: 0 -1px 2px #dddddd;
+  border-radius: 2px 2px 0 0;
+  box-sizing: border-box; }

@@ -1,5 +1,9 @@
 /* Crystal ship medium */
 
+$dark-copy: #132B24;
+$link-color: #AA1E00;
+$link-color-hover: #C86700;
+
 /*
  * Mixins
  */
@@ -24,23 +28,41 @@
  */ 
 
 body {
-  font-family: 'Alegreya Sans', 'Arial', 'Helvetica', sans-serif;
-  color: #132B24;
-  padding: 0 10px 10px;
+  font-family: 'Source Sans Pro', 'Arial', 'Helvetica', sans-serif;
+  color: $dark-copy;
+  padding: 0 10px;
   margin: 0;
   font-size: 16px;
   font-weight: 300;
   background: #edecea url('../images/bgpaper.png');
 }
 
+h1, h2 {
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 20px 40px ;  
+  @include mq-tablet { font-size: 35px }
+  @include mq-desktop { font-size: 40px }
+}
+
+
 a {
-  color: #AA1E00;
+  color: $link-color;
   text-decoration: none;
   transition: all 0.2s ease-out;
 }
 
 a:hover {
-  color: #C86700;
+  color: $link-color-hover;
+}
+
+p {
+  margin: 0 0 1em;
 }
 
 
@@ -48,30 +70,40 @@ a:hover {
  * Layout
  */
 
-header, footer {
-  max-width: 900px;
+header, footer, article {
+  max-width: 800px;
   margin: 0 auto;
+  clear: both;
 }
 
-article {
+article.fullwidth {
   clear: both;
+  max-width: 100%;
+}
+
+
+
+header {
+  background: white;
+  box-shadow: 0 1px 2px #ddd;
+  border-radius: 0 0 2px 2px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 h1 {
   float: left;
-  font-weight: 900;
-  background: white;
-  margin: 0 0 20px;
-  
+  font-weight: 900;  
+  margin: 0;
   a {
-    color: black;
+    color: $dark-copy;
     padding: 20px;
     display: inline-block;
     font-size: 18px;
-    @include mq-tablet { font-size: 20px; padding: 30px }
-    @include mq-desktop { font-size: 30px; padding: 40px }
-    box-shadow: 0 1px 2px #ddd;
-    border-radius: 0 0 2px 2px;
+    line-height: 1em;
+    @include mq-tablet { font-size: 15px; padding: 15px }
+    @include mq-desktop { font-size: 20px; padding: 20px }
+    
   }
   span {
     position: absolute;
@@ -80,12 +112,25 @@ h1 {
   }
 }
 
+nav a {
+  opacity: 0.3;
+  float: right;
+  padding: 20px;
+  display: inline-block;
+  font-size: 18px;
+  color: $dark-copy;
+  line-height: 1em;
+  @include mq-tablet { font-size: 15px; padding: 15px }
+  @include mq-desktop { font-size: 20px; padding: 20px }
+  &:hover {
+    opacity: 1;
+  }
+}
 
 img {
   min-width: 100%;
   max-width: 100%;
 }
-
 
 /*
  * Post teaser
@@ -117,16 +162,30 @@ img {
   }
 }
 
+.btn {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #DDD;
+  box-shadow: 0 1px 0 #F7DCD6;
+  padding: 5px 10px;
+  color: $dark-copy;
+  transition: all 0.2s ease-out;
+  &:hover {
+    box-shadow: 0 1px 0 $link-color-hover;
+    border: 1px solid #CCC;
+  }
+}
+
 
 /*
  * Footer
  */
 
 footer {
-  text-align: center;
-  border-top: 1px solid #AA1E00;
-  margin: 20px auto 0;
-  width: 70%;
-  @include mq-tablet { width: 80% }
-  @include mq-mobile { width: 100%; text-align: left }  
+  background: white;
+  margin-top: 20px;
+  padding: 20px 20px 1px;
+  box-shadow: 0 -1px 2px #ddd;
+  border-radius: 2px 2px 0 0;
+  box-sizing: border-box;
 }
